@@ -24,4 +24,10 @@ public class EnquiryDetailsController {
 		Enquirydetails ed =edi.postEnquiry(enq);
 		return new ResponseEntity<Enquirydetails>(enq,HttpStatus.CREATED);
 	}
+@PostMapping(value="/enquiry")
+	public ResponseEntity<Enquirydetails> postEnquiry(@RequestBody Enquirydetails enq)
+	{
+		Enquirydetails ed =edi.postEnquiry(enq);
+		return new ResponseEntity<Enquirydetails>(enq,HttpStatus.CREATED);
+	}
 }
